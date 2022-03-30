@@ -3,7 +3,9 @@ const input1 = document.querySelector('input')
 const list1 = document.querySelector('ul')
 
 function addPlanItem() {
-    console.log("will add a plan here...")
+    const item = document.createElement('li')
+    item.textContent = input1.value
+    list1.appendChild(item)
 }
 
 button1.addEventListener('click', addPlanItem)
